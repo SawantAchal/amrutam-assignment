@@ -25,22 +25,22 @@ export const summarCollectionData = [
       {
         name: "Shatavari",
         benefit: "Naturally enhances brain and relieves pain",
-        image: "/ingredients/shatavari.png"
+        image: "/gokhruIng.png"
       },
       {
         name: "Bhringraj",
         benefit: "Promotes hair growth and strengthens roots",
-        image: "/ingredients/bhringraj.png"
+        image: "/gokhruIng.png"
       },
       {
         name: "Triphala",
         benefit: "Improves scalp health and reduces dandruff",
-        image: "/ingredients/triphala.png"
+        image: "/gokhruIng.png"
       },
       {
         name: "Amla",
         benefit: "Adds shine and prevents premature greying",
-        image: "/ingredients/amla.png"
+        image: "/gokhruIng.png"
       }
     ],
 
