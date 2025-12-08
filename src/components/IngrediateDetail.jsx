@@ -10,7 +10,7 @@ const IngrediateDetail = () => {
   return (
     <>
       <main className="bg-[#FFF7E2] min-h-screen px-16 py-10">
-        <button onClick={() => navigate(-1)}  className="inline-flex items-center gap-2 px-4 py-2 mb-8 text-[16px] text-[#3A643B] leading-9 border border-[#3A643B]  rounded-lg ">
+        <button onClick={() => navigate(-1)}  className=" cursor-pointer inline-flex items-center gap-2 px-4 py-2 mb-8 text-[16px] text-[#3A643B] leading-9 border border-[#3A643B]  rounded-lg ">
           <FiChevronLeft className="text-[16px]" />
           Back
         </button>
