@@ -1,8 +1,11 @@
 import React from 'react'
 import { summarCollectionData } from '../data/SummarCollectionData.js'
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom'
 
 const SummarCollectionCard = () => {
+    const navigate = useNavigate()
+
     const StarRating = ({ rating, max = 5 }) => {
         const stars = [];
 
@@ -24,7 +27,7 @@ const SummarCollectionCard = () => {
             <h2 className="text-lg font-semibold text-[#3A643C] mb-3">Summer Collection</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {summarCollectionData.map((data) => (
-                <article key={data.id} className="bg-white rounded-2xl shadow-sm overflow-hidden w-full">
+                <article key={data.id} onClick={() => navigate(`/product/${data.id}`)} className="bg-white rounded-2xl shadow-sm overflow-hidden w-full">
                     <img src={data.image} alt={data.title} className="w-full h-[280px] object-cover" />
                     <div className="p-4 space-y-1 text-sm">
                         <p className="text-[#2E2F2E] leading-snug text-center text-lg">{data.title}</p>
