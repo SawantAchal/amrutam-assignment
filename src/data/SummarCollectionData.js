@@ -13,8 +13,7 @@ export const summarCollectionData = [
     tag: "Summer Collection",
     shortDescription:
       "Amrutam’s Kuntal Care Do-It-Yourself Hair Spa is an ayurvedic formula filled with herbal revitalizing herbs and essential oils like Eucalyptus oil, Triphala and Bhringraj.",
-    longDescription:
-      "These Ayurvedic ingredients when fused together make a potent elixir that nourishes dry and frizzy hair making it soft and bouncy. This spa treatment revitalizes the roots, promotes growth, provides shine, coats hair with a moisturizing layer and is the best stress reliever. It's time to bring spa home and unwind.",
+    longDescription: "Amrutam's Kuntal Care Do-It-Yourself Hair Spa is an ayurvedic marvel filled to the brim with revitalizing herbs and essential oils like Eucalyptus oil, Triphala, Balchhad and Bhringraj. These Ayurvedic ingredients when fused together make a potent dollop that nourishes dry and frizzy hair making it soft and bouncy! This spa treatment revitalizes the roots, promotes growth, provides shine, coats hair with a moisturizing layer and is the best stress reliever! It's time to bring spa home and unwind.",
     productHighlights: [
       "Helps with Dry & Frizzy Hair",
       "Relaxes the scalp, improves hair health",
