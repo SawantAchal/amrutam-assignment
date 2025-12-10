@@ -4,6 +4,7 @@ import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa'
 import { useParams, useNavigate  } from 'react-router-dom'
 import reviewVideoImage from '../assets/reviewVideoImage.png'
 import ReviewsAndRating from './ReviewsAndRating'
+import { IoIosArrowForward } from "react-icons/io";
 
 const ProductDetailed = () => {
   const { id } = useParams()
@@ -65,7 +66,6 @@ const ProductDetailed = () => {
                 <button key={idx} className={`px-3 rounded-sm  text-xs w-[97px] h-9 bg-[#FAFAFA]`}>{p}</button>
               ))}
             </div>
-            {/* Qty + Add to cart */}
             <div className="flex items-center gap-4">
               <div className="flex items-center justify-between w-[306px] h-[58px] border border-[#676767] rounded-xl px-4 text-sm">
                 <button className='text-2xl'>-</button>
@@ -98,16 +98,16 @@ const ProductDetailed = () => {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 {product.keyIngredients?.map((ing, idx) => (
-                  <div key={idx} onClick={() => navigate('/ingredient')} className="bg-[#FDEAD2] rounded-xl px-3 py-2 grid grid-cols-[48px_1fr_16px] items-center gap-2 text-[10px] w-[293px] h-[94px] ">
-                    <div className="h-14 w-14  overflow-hidden flex items-center justify-center">
+                  <div key={idx} onClick={() => navigate('/ingredient/:id')} className=" cursor-pointer bg-[#FDEAD2] rounded-xl px-3 py-2 grid grid-cols-[48px_1fr_16px] items-center gap-2 text-[10px] w-[293px] h-[94px] ">
+                    <div className="h-14 w-14  pr-0.5 overflow-hidden flex items-center justify-center">
                       <img src={ing.image} alt={ing.name} className="h-[54px] w-[54px] object-cover"/>
                     </div>
                     <div>
                       <h4 className="font-bold text-[#2E2F2E] text-[18px] mb-0.5">{ing.name}</h4>
-                      <p className="text-[#646665] text-[16px] leading-8">{ing.benefit}</p>
+                      <p className="text-[#646665] text-[16px] leading">{ing.benefit}</p>
                     </div>
                     <div className="text-[14px] text-[#3A643B] font-semibold">
-                      →
+                      <IoIosArrowForward/>
                     </div>
                   </div>
                 ))}
