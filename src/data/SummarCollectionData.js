@@ -22,14 +22,14 @@ export const summarCollectionData = [
     ],
     keyIngredients: [
       {
-        name: "Shatavari",
+        name: "Gokhru",
         benefit: "Naturally enhances brain and relieves pain",
         image: "/gokhruIng.png"
       },
       {
-        name: "Bhringraj",
+        name: "Citrak",
         benefit: "Promotes hair growth and strengthens roots",
-        image: "/gokhruIng.png"
+        image: "/citrak.png"
       },
       {
         name: "Triphala",
