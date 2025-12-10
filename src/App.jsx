@@ -3,7 +3,7 @@ import './App.css'
 import HomePage from './pages/HomePage'
 import Home from './components/Home'
 import ProductDetailed from './components/ProductDetailed'
-import IngrediateDetail from './components/IngrediateDetail'
+import GokhruIngredient from './components/GokhruIngredient'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route path='/' element={<HomePage/>}>
           <Route index element={<Home/>}/>
           <Route path="/product/:id" element={<ProductDetailed/>} />
-          <Route path="/ingredient" element={<IngrediateDetail />} />
+          <Route path="/ingredient/:id" element={<GokhruIngredient />} />
         </Route>
       </Routes>
     </>
